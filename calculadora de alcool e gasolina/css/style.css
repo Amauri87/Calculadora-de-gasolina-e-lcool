@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #22272e;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    /*background-color: blue;*/
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    margin: 12px 0;
+}
+
+.form label {
+    color: #fff;
+    font-size: 18px;
+    text-align: left;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0 12px;
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.button {
+    width: 100%;
+    height: 36px;
+    background-color: #119cea;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result {
+    background-color: #00b63e;
+    max-width: 450px;
+    padding: 14px 20px;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #696969;
+    user-select: none;
+    transition: transform 0.8s;
+}
+
+.hide{
+    display: none;
+}
+
+.result:hover {
+    transform: scale(1.05);
+}
+
+.result span {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+#text-result {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info {
+    position: fixed;
+    right: 14px;
+    bottom: 22px;
+}
+
+.text-alert {
+    max-width: 40px;
+    height: auto;
+}
+
+
+.tooltip{
+    color: #fff;
+    background-color: #0f0f0f;
+    padding: 10px 8px;
+    position: relative;
+    bottom: 28px;
+    display: none;
+}
+
+.info:hover .tooltip{
+    display: inline;
+}
+
+
+.sobre{
+    max-width: 620px;
+    background-color: #242424;
+    padding: 24px 14px;
+    border: 1px solid #696969;
+    border-radius: 4px;
+}
+
+.sobre p {
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 150%;
+}
+
+.button-calcular{
+    background-color: #119cea;
+    height: 48px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 24px;
+    border-radius: 4px;
+    
+}
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Reduzir a largura geral da página */
+        padding: 10px;
+    }
+
+    .logo {
+        max-width: 80px; /* Logo menor para dispositivos móveis */
+    }
+
+    .title {
+        font-size: 20px; /* Reduzir o tamanho da fonte do título */
+        margin: 8px 0;
+    }
+
+    .input {
+        height: 32px; /* Inputs menores */
+        font-size: 14px;
+    }
+
+    .button {
+        height: 32px; /* Botão menor */
+        font-size: 16px;
+    }
+
+    .result {
+        padding: 10px 16px; /* Reduzir o padding da área de resultado */
+    }
+
+    .result span {
+        font-size: 14px; /* Texto menor dentro do resultado */
+    }
+
+    #text-result {
+        font-size: 18px; /* Texto principal menor */
+    }
+
+    .info {
+        right: 10px;
+        bottom: 16px; /* Ajuste a posição do ícone de alerta */
+    }
+
+    .text-alert {
+        max-width: 30px; /* Ícone menor */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 95%; /* Para telas ainda menores, como smartphones */
+    }
+
+    .logo {
+        max-width: 60px; /* Logo ainda menor */
+    }
+
+    .title {
+        font-size: 18px; /* Título menor */
+    }
+
+    .input {
+        height: 28px;
+        font-size: 12px; /* Inputs menores ainda */
+    }
+
+    .button {
+        height: 28px;
+        font-size: 14px; /* Botão menor */
+    }
+
+    .result {
+        padding: 8px 12px;
+    }
+
+    .result span {
+        font-size: 12px;
+    }
+
+    #text-result {
+        font-size: 16px;
+    }
+}
+
+
